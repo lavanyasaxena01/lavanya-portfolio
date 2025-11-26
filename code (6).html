@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanya Saxena - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-white overflow-x-hidden">
+    <!-- Floating Navbar -->
+    <nav class="fixed top-0 w-full bg-white/10 backdrop-blur-md z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Lavanya Saxena</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#hero" class="hover:text-purple-300 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-purple-300 transition">About</a></li>
+                <li><a href="#skills" class="hover:text-purple-300 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-purple-300 transition">Projects</a></li>
+                <li><a href="#experience" class="hover:text-purple-300 transition">Experience</a></li>
+                <li><a href="#contact" class="hover:text-purple-300 transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden" id="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+        <ul class="md:hidden hidden bg-white/10 backdrop-blur-md px-4 py-2" id="mobile-menu">
+            <li><a href="#hero" class="block py-2 hover:text-purple-300">Home</a></li>
+            <li><a href="#about" class="block py-2 hover:text-purple-300">About</a></li>
+            <li><a href="#skills" class="block py-2 hover:text-purple-300">Skills</a></li>
+            <li><a href="#projects" class="block py-2 hover:text-purple-300">Projects</a></li>
+            <li><a href="#experience" class="block py-2 hover:text-purple-300">Experience</a></li>
+            <li><a href="#contact" class="block py-2 hover:text-purple-300">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center text-center px-4">
+        <div class="animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Lavanya Saxena</h1>
+            <p class="text-xl md:text-2xl mb-8">AI & Data Science Student | General Secretary (AI&DS Society) | Robotics Head (AAIRO) | Innovator</p>
+            <a href="#projects" class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105">Explore Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 px-4 bg-white/5 backdrop-blur-sm">
+        <div class="container mx-auto text-center animate-slide-up">
+            <h2 class="text-4xl font-bold mb-8">About Me</h2>
+            <p class="text-lg max-w-3xl mx-auto">I am a B.Tech AI & Data Science student at ADGIPS. I work on AI/ML, IoT, sustainability, robotics, and cybersecurity projects. I serve as the General Secretary of the AI & DS Society (Datazoic) and the Robotics Head at AAIRO Society. I love building impactful tech projects, leading teams, and participating in national-level hackathons.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 animate-slide-up">Skills</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="skill-bar" data-skill="Python"><span>Python</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
+                <div class="skill-bar" data-skill="C Programming"><span>C Programming</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
+                <div class="skill-bar" data-skill="Machine Learning"><span>Machine Learning</span><div class="bar"><div class="fill" style="width: 80%"></div></div></div>
+                <div class="skill-bar" data-skill="Data Analytics"><span>Data Analytics</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
+                <div class="skill-bar" data-skill="Deep Learning (Basics)"><span>Deep Learning (Basics)</span><div class="bar"><div class="fill" style="width: 70%"></div></div></div>
+                <div class="skill-bar" data-skill="Git & GitHub"><span>Git & GitHub</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
+                <div class="skill-bar" data-skill="Project Management"><span>Project Management</span><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
+                <div class="skill-bar" data-skill="Leadership"><span>Leadership</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-white/5 backdrop-blur-sm">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 animate-slide-up">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white/10 backdrop-blur-md rounded-lg p-6 hover:transform hover:-translate-y-2 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Navodaya" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Navodaya</h3>
+                    <p>Sustainable fashion project converting cloth waste into eco-friendly products.</p>
+                    <a href="#" class="mt-4 inline-block bg-purple-600 px-4 py-2 rounded">View Project</a>
+                </div>
+                <div class="project-card bg-white/10 backdrop-blur-md rounded-lg p-6 hover:transform hover:-translate-y-2 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Vriksh" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Vriksh</h3>
+                    <p>Flower & leaf preservation project creating incense sticks, perfumes & bookmarks.</p>
+                    <a href="#" class="mt-4 inline-block bg-purple-600 px-4 py-2 rounded">View Project</a>
+                </div>
+                <div class="project-card bg-white/10 backdrop-blur-md rounded-lg p-6 hover:transform hover:-translate-y-2 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400" alt="Smart Agriculture System" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Smart Agriculture System</h3>
+                    <p>IoT-based smart farming system for soil sensing, crop prediction & automated irrigation.</p>
+                    <a href="#" class="mt-4 inline-block bg-purple-600 px-4 py-2 rounded">View Project</a>
+                </div>
+                <div class="project-card bg-white/10 backdrop-blur-md rounded-lg p-6 hover:transform hover:-translate-y-2 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="AI Career Guidance Tool" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">AI Career Guidance Tool</h3>
+                    <p>AI-powered tool that predicts career paths, skills, salaries & job recommendations. Presented at IIT Delhi.</p>
+                    <a href="#" class="mt-4 inline-block bg-purple-600 px-4 py-2 rounded">View Project</a>
+                </div>
+                <div class="project-card bg-white/10 backdrop-blur-md rounded-lg p-6 hover:transform hover:-translate-y-2 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400" alt="AegisAI" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">AegisAI (Hack With Agra)</h3>
+                    <p>Predictive and preventive cybersecurity system with camouflage protection.</p>
+                    <a href="#" class="mt-4 inline-block bg-purple-600 px-4 py-2 rounded">View Project</a>
+                </div>
+                <div class="project-card bg-white/10 backdrop-blur-md rounded-lg p-6 hover:transform hover:-translate-y-2 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400" alt="Clear Air IoT" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Clear Air IoT</h3>
+                    <p>IoT-based real-time pollution and air-quality monitoring system.</p>
+                    <a href="#" class="mt-4 inline-block bg-purple-600 px-4 py-2 rounded">View Project</a>
+                </div>
+                <div class="project-card bg-white/10 backdrop-blur-md rounded-lg p-6 hover:transform hover:-translate-y-2 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Dynamic Parking Pricing System" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Dynamic Parking Pricing System</h3>
+                    <p>Real-time dynamic pricing simulation model built using Pathway analytics.</p>
+                    <a href="#" class="mt-4 inline-block bg-purple-600 px-4 py-2 rounded">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4">
+        <div class="container mx-auto animate-slide-up">
+            <h2 class="text-4xl font-bold text-center mb-12">Experience</h2>
+            <ul class="space-y-4 text-lg">
+                <li><strong>General Secretary — AI & DS Society (Datazoic)</strong></li>
+                <li><strong>Robotics Head — AAIRO Society</strong></li>
+                <li><strong>Enactus Team Member — Sustainability Projects</strong></li>
+                <li><strong>Hackathon Participant — IIT Delhi, IIT Roorkee, Smart Delhi Ideathon, Hack With Agra</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4">
+        <div class="container mx-auto text-center animate-slide-up">
+            <h2 class="text-4xl font-bold mb-12">Contact</h2>
+            <p class="mb-4">Email: <a href="mailto:lavanyasaxena01012000@gmail.com" class="text-purple-300">lavanyasaxena01012000@gmail.com</a></p>
+            <p class="mb-4">LinkedIn: <a href="https://www.linkedin.com/in/lavanya-saxena-6b9b96240/" class="text-purple-300">LinkedIn Profile</a></p>
+            <p class="mb-8">GitHub: <a href="https://github.com/lavanyasaxena01/" class="text-purple-300">GitHub Profile</a></p>
+            <form action="mailto:lavanyasaxena01012000@gmail.com" method="post" enctype="text/plain" class="max-w-md mx-auto">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 bg-white/10 rounded" required>
+                <input type="email" name="email" placeholder="Your Email" class="w-full p-3 mb-4 bg-white/10 rounded" required>
+                <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 bg-white/10 rounded" rows="5" required></textarea>
+                <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded">Send Message</button>
+            </form>
+            <!-- For Formspree: Replace form action with https://formspree.io/f/your-form-id -->
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/lavanya-saxena-6b9b96240/" class="text-2xl hover:text-purple-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/lavanyasaxena01/" class="text-2xl hover:text-purple-300"><i class="fab fa-github"></i></a>
+                <a href="mailto:lavanyasaxena01012000@gmail.com" class="text-2xl hover:text-purple-300"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center bg-white/10 backdrop-blur-md">
+        <p>&copy; 2025 Lavanya Saxena | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
