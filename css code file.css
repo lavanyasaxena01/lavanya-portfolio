@@ -1,0 +1,23 @@
+/* Custom styles for animations and skill bars */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.animate-slide-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-bar span {
+    display: block;
+    margin-bottom: 5px;
